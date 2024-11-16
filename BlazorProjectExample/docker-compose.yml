@@ -1,0 +1,12 @@
+﻿services:
+  blazorprojectexample:
+    image: blazorprojectexample
+    build:
+      context: .
+      dockerfile: BlazorProjectExample/BlazorProjectExample/Dockerfile
+
+  blazorprojectexample.client:
+    image: blazorprojectexample.client
+    build:
+      context: .
+      dockerfile: BlazorProjectExample/BlazorProjectExample.Client/Dockerfile
